@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { adventeges, techs } from "../data";
 import { setObserve } from "../anim";
 
@@ -12,6 +13,9 @@ export default function MainScreen() {
 
 	return (
 		<>
+			<Helmet>
+				<title>Главная | DL Guard</title>
+			</Helmet>
 			<section className="landing _s-anim">
 				<Landing />
 			</section>
