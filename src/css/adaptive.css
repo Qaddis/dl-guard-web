@@ -1,0 +1,107 @@
+@media (max-width: 1200px) {
+	.wrapper {
+		min-width: 768px;
+	}
+}
+
+@media (max-width: 824px) {
+	.wrapper {
+		min-width: 425px;
+	}
+
+	.landing .wrapper {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: flex-start;
+		row-gap: 10px;
+	}
+
+	.tagline {
+		min-width: 100%;
+		text-align: center;
+	}
+
+	.scene-3d {
+		display: none;
+	}
+
+	.presenting-list__item h3 {
+		line-height: 85%;
+		margin-bottom: 8px;
+	}
+
+	.modal__content .btn-close {
+		top: 1px;
+		right: 1px;
+		border: none;
+	}
+}
+
+@media (max-width: 625px) {
+	.header .navbar {
+		display: none;
+	}
+
+	.burger-btn {
+		display: block;
+	}
+
+	.not-found h2 {
+		font-size: 35px !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.wrapper {
+		min-width: 325px;
+	}
+
+	.socials svg {
+		width: 45px;
+		height: 45px;
+	}
+
+	.github svg {
+		width: 51.5px !important;
+		height: 51.5px !important;
+	}
+
+	.footer .wrapper {
+		row-gap: 20px;
+	}
+
+	.logo {
+		font-size: 35px;
+		display: flex;
+		align-items: center;
+	}
+
+	.logo em {
+		margin-right: 5px;
+	}
+
+	.logo img {
+		width: 50px;
+	}
+
+	.burger-btn {
+		width: 50px;
+		height: 50px;
+	}
+
+	.downloads__item {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		text-align: center;
+		row-gap: 15px;
+	}
+
+	.downloads__item button {
+		min-width: 200px !important;
+	}
+
+	.modal__content {
+		min-width: 80%;
+	}
+}

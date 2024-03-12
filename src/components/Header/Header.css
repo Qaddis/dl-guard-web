@@ -1,0 +1,163 @@
+.header {
+	width: 100%;
+	padding: 10px 25px;
+	background-color: var(--dark);
+	color: var(--light);
+	border-bottom: 3px solid var(--add);
+}
+
+.header .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+	font-size: 45px;
+	font-family: "Caveat", cursive;
+	color: var(--red);
+	font-weight: 700;
+}
+
+.logo em {
+	font-weight: 700;
+	color: var(--blue);
+}
+
+.logo img {
+	width: 65px;
+	padding-right: 5px;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 25px;
+}
+
+.navbar__link {
+	position: relative;
+	font-size: 18px;
+	color: var(--light);
+	transition: 0.2s all;
+}
+
+.navbar__link::after {
+	content: "";
+	height: 2px;
+	width: 100%;
+	background-color: var(--accent);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.navbar__link:hover {
+	color: var(--accent);
+}
+
+.navbar__link:active {
+	opacity: 0.8;
+}
+
+.navbar__link--active {
+	text-decoration: none !important;
+}
+
+.navbar__link--active:hover {
+	color: var(--light);
+}
+
+.navbar__link--active::after {
+	opacity: 1;
+}
+
+.burger-btn {
+	display: none;
+	width: 60px;
+	height: 60px;
+}
+
+.burger-btn img {
+	transform: rotate(180deg);
+}
+
+.menu {
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	overflow: hidden;
+
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.35s opacity;
+}
+
+.menu.--active {
+	pointer-events: all;
+	opacity: 1;
+}
+
+.menu__content {
+	width: 40%;
+	height: 100%;
+	z-index: 5;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	background-color: var(--dark);
+	border-left: 3px solid var(--accent);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 5px;
+
+	transform: translateX(100%);
+	transition: 0.35s transform;
+}
+
+.menu__content.--active {
+	transform: translateX(0);
+}
+
+.menu__header {
+	font-size: 30px;
+	font-family: var(--header-font);
+	font-weight: 700;
+	color: var(--accent);
+	margin-bottom: 20px;
+}
+
+.menu__link {
+	font-size: 18px;
+	color: var(--light);
+	position: relative;
+}
+
+.menu__link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--accent);
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.menu__link--active::after {
+	opacity: 1;
+}

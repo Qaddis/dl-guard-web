@@ -1,0 +1,35 @@
+.landing._s-anim {
+	opacity: 0;
+	transition: all 2s;
+}
+
+.products._s-anim,
+.info._s-anim {
+	transform: translateY(5%);
+	opacity: 0;
+	transition: all 2s;
+}
+
+.landing._s-anim.--active,
+.products._s-anim.--active,
+.info._s-anim.--active {
+	transform: translateY(0) !important;
+	opacity: 1 !important;
+}
+
+.presenting-list__item._anim {
+	opacity: 0;
+	transform: translateX(-20%);
+	transition: all 1.65s ease;
+}
+
+.presenting-list__item--right._anim {
+	opacity: 0;
+	transform: translateX(20%);
+	transition: all 1.65s ease;
+}
+
+.presenting-list__item._anim.--active {
+	opacity: 1 !important;
+	transform: translateX(0) !important;
+}
