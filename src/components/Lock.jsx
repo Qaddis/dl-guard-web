@@ -7,14 +7,11 @@ export default function Model(props) {
 	const group = useRef();
 	const { nodes, materials } = useGLTF("/lock.glb");
 
-	const rotateModel = () => {
+	useFrame(() => {
 		if (group.current) {
 			group.current.rotation.y += 0.02;
-			requestAnimationFrame(rotateModel);
 		}
-	};
-
-	requestAnimationFrame(rotateModel);
+	});
 
 	return (
 		<group ref={group} {...props} dispose={null}>
