@@ -45,9 +45,9 @@ export const techs = [
 		isRight: true,
 	},
 	{
-		title: "HTML CSS JS",
+		title: "HTML CSS JavaScript",
 		description:
-			"Сайт для проекта написан на HTML, CSS и JS. Более того, они используются для создания интерфейсов компьютерного и мобильного приложений.",
+			"Используются в создании сайта проекта, интерфейса компьютерного приложения, а так же сервера. ",
 		isRight: false,
 	},
 	{
@@ -67,8 +67,8 @@ export const techs = [
 		isRight: true,
 	},
 	{
-		title: "React & React Native",
-		description: "Используются в сайте проекта и мобильном приложении.",
+		title: "React",
+		description: "На нём написан сайт проекта.",
 		isRight: false,
 	},
 ];
@@ -86,7 +86,7 @@ export const materials = [
 		title: "Host",
 		description: "Файлы программной части сервера системы.",
 		modDesc:
-			"Содержит:<br><i>&quot;index.js&quot;</i> - файл с готовой логикой сервера на node.js + express.<br><i>&quot;package.js&quot;</i> - файл зависимостей node.js.<hr>Сервер получает уникальный номер пропуска от приложения &quot;DL Guard | <i>PC</i>&quot;,<br>делает запрос к базе данных, проверяя, есть ли такой в списке разрешенных, и отправляет ответ обратно на устройство.",
+			"Содержит:<br><i>&quot;index.js&quot;</i> - файл с готовой логикой сервера на node.js + express.<br><i>&quot;package.json&quot;</i> - файл зависимостей node.js.<br><i>&quot;views/stat.hbs&quot;</i> - шаблон страницы для серверного рендеринга.<br><i>&quot;public/stat.css&quot;</i> - файл стилей для шаблона страницы.<hr>Сервер получает уникальный номер пропуска от приложения &quot;DL Guard | <i>PC</i>&quot;,<br>делает запрос к базе данных, проверяя, есть ли такой в списке разрешенных, и отправляет ответ обратно на устройство.",
 		path: "/server_files.zip",
 	},
 	{

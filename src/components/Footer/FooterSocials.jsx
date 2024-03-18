@@ -3,7 +3,7 @@ export default function FooterSocials() {
 		<ul className="socials">
 			<li>
 				<a
-					href="https://vk.com/qadd1s"
+					href="https://vk.com/qaddis"
 					target="_blank"
 					className="socials__link"
 				>
@@ -13,11 +13,7 @@ export default function FooterSocials() {
 				</a>
 			</li>
 			<li>
-				<a
-					href="https://web.telegram.org/k/#1011776438"
-					target="_blank"
-					className="socials__link"
-				>
+				<a href="https://t.me/qaddis" target="_blank" className="socials__link">
 					<svg>
 						<use xlinkHref="#telegram-svg"></use>
 					</svg>
@@ -25,7 +21,7 @@ export default function FooterSocials() {
 			</li>
 			<li>
 				<a
-					href="https://github.com/Sun-R1se"
+					href="https://github.com/Qaddis"
 					target="_blank"
 					className="socials__link github"
 				>

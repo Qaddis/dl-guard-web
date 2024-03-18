@@ -9,7 +9,7 @@ export default function Footer() {
 				<FooterSocials />
 
 				<p className="copyright">
-					© 2024 Святослав &quot;Qadd1s&quot; Барсуков
+					© 2024 Святослав &quot;Qaddis&quot; Барсуков
 				</p>
 
 				<FooterNav />
